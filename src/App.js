@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Slideshow from "./components/Slideshow";
 
 const BuyMedicines = () => (
   <div>
@@ -91,6 +92,7 @@ function App() {
             <Route path="/home-essentials" element={<HomeEssentials />} />
             <Route path="/health-condition" element={<HealthCondition />} />
           </Routes>
+          <Slideshow />
         </main>
       </div>
     </Router>
